@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+  font-size: 20px;
+  margin:10px 30px;
+}
+.App{
+  min-height: 350px;
+  width: 500px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  border: 2px solid black;
+  border-radius: 20px;  
+
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#to-do-form input {
+  padding: 8px 16px;
+  border-radius: 18px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#to-do-form button {
+  padding: 8px 16px;
+  border-radius: 18px;
+  background-color: rgb(5, 5, 5);
+  font-weight: bold;
+  color: aliceblue;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-title{
+  margin-left: 560px;
 }
 
-.App-link {
-  color: #61dafb;
+.list{
+  background-color: rgb(97, 190, 111);
+  width: 300px;
+  height: 50px;
+  margin: 8px 16px;
+  border-radius: 8px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list p{
+  font-weight: bold;
+  padding: 8px 10px;
+  position: relative;
+}
+
+.list p span
+{
+  position: absolute;
+  right:10px;
+  font-weight: bold;
+  border-radius: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+
+.strikeThrough{
+  text-decoration: line-through;
 }
